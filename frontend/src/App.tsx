@@ -8,7 +8,7 @@ function App() {
 
 
   return (
-    <div className='flex md:gap-10'>
+    <div className='min-h-screen h-full flex md:gap-10'>
       <LeftNav />
       <div className='p-5 w-full flex flex-col items-center gap-10'>
         <Header />
