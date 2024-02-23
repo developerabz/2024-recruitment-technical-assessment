@@ -11,7 +11,7 @@ const Header = () => {
     setTitleColor(prevColor => prevColor === blueColor ? redColor : blueColor)
   }
   return (
-    <header className="w-4/5">
+    <header className="w-[90%]">
 
       <p>DevSoc presents</p>
       <h1 className={titleColor}

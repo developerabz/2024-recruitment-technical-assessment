@@ -16,8 +16,8 @@ const Card = ({
 
   return (
     <div className="p-5 shadow-md rounded-md">
-      <section className="md:flex md:justify-between">
-        <p className="font-extrabold text-2xl">{course_prefix}{course_code}</p>
+      <section className="flex justify-between">
+        <p className="font-extrabold text-2xl px-1">{course_prefix}{course_code}</p>
         <div >
           <div className="flex">
             {Array(filledStars).fill(0).map((v, i) => <FilledStar key={i} />)}
@@ -29,7 +29,7 @@ const Card = ({
       </section>
       <p>{course_title}</p>
       {/*another map for each offered term*/}
-      <div className="flex md:flex-row flex-col gap-1 mt-10 p-2">
+      <div className="flex sm:flex-row flex-col gap-1 mt-10 p-2 flex-wrap">
         {offered_terms.map((v, i) => <Chip key={i} termName={v} />)}
 
       </div>
